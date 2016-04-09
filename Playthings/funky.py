@@ -45,15 +45,17 @@ fn(first_integer_test(2000))
 
 # surely we can go deeper, this is supposed to be a nice functional language, right? Right?
 
-def grab(): # it has no argument. Gucci?
-    in = input()
-    return in
+# def grab(): # it has no argument. Gucci?
+#    b = str(input("Input something, foo: "))
+#    return b
+# Python really can't comment out blocks? What the fuck, man. Was the white space delim worth it?
 
-external = 0
+external = None
 
 def ext_grab():
     c = input()
     external = c
     return c
 
-fn(ext_grab())
+print(ext_grab())
+print(external)
