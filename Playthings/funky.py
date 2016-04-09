@@ -57,5 +57,11 @@ def ext_grab():
     external = c
     return c
 
-print(ext_grab())
-print(external)
+print("in: ", ext_grab())
+print("external: ", external) # so global elements are really a thing, I guess. Can I pass an argument or something?
+
+# I can't tell if it's annoying or not that the function is called before 'in:' is printed.
+# It's no saint, that's for sure.
+
+external = ext_grab()
+print("external: ", external)
