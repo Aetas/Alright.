@@ -1,10 +1,12 @@
 # time to chain some useless functions to see if I can get python to complain.
 
 def get_input():
+    """At least docstrings are pretty cool""" # it's no cargo though
     start = int(input("Gimme a number: "))
     return start
 
 def do_something(n):
+    """This is the longest way to divide by two"""
     if n / 2 == 1:
         a = 1
     else:
@@ -19,6 +21,7 @@ def do_something(n):
     return a
 
 def intermediate(n):
+    """Interprets the input"""
     if n == 0:
         return 0
     elif n  == 1:
@@ -32,6 +35,7 @@ def intermediate(n):
     return 5 # I wonder if this will cause any problems.
 
 def determine(n): # this will test how python stores argument variables for functions and their scope
+    """A fat switch, really"""
     if n == 0:
         print("That number wasn't even divisible by 2.")
     elif n  == 1:
