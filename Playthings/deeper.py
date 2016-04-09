@@ -1,15 +1,21 @@
 # time to chain some useless functions to see if I can get python to complain.
 
 def get_input():
-    start = input("Gimme a number: ")
+    start = int(input("Gimme a number: "))
     return start
 
 def do_something(n):
-    a = 0
+    if n / 2 == 1:
+        a = 1
+    else:
+        a = 0
+
     while n % 2 != 0:
         n = n % 2
         # a++ # <-- doesn't work. Whyyyyy.
         a += 1 # at least this works
+
+    print("test. a = ", a)
     return a
 
 def intermediate(n):
