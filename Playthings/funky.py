@@ -18,4 +18,27 @@ def fib(n):
 
 fib(2000)
 
-    
+# update: python doesn't give a damn about those empty lines. Though atom might just be humoring me and not actually putting carriage returns there.
+
+fn = fib
+fn(1500)
+
+tst = fib(2000)
+# I guess that one was an obvious result
+print(tst) # why do you return as none?
+# and why does assigning a new variable to a function return call the function?
+# I guess it has to do with the fact that the only output is actually a print and not a number return.
+# and in that guess I had assumed that these outputs were stores as a ASCII char output rather than an integer-like type.
+# C might have called me stupid in this case but at least I would have learned something from it.
+# such as where to go next.
+# C++: "You're stupid for trying to assign incompatible data types, do it right"
+# Python: "Shh, bb I'll take care of you until I fail spectacularly and refuse to tell you what happened"
+
+# the fact that this automatically return-lines is going to irk me at some point
+
+# some return type testing.
+
+def first_integer_test(n):
+    n
+
+fn(first_integer_test(2000))
