@@ -38,7 +38,22 @@ print(tst) # why do you return as none?
 
 # some return type testing.
 
-def first_integer_test(n):
-    n
+def first_integer_test(a):
+    return a # so return() is a thing. Good.
 
 fn(first_integer_test(2000))
+
+# surely we can go deeper, this is supposed to be a nice functional language, right? Right?
+
+def grab(): # it has no argument. Gucci?
+    in = input()
+    return in
+
+external = 0
+
+def ext_grab():
+    c = input()
+    external = c
+    return c
+
+fn(ext_grab())
