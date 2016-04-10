@@ -4,7 +4,7 @@
 # I also wonder if you could assign in a function call argument initialization. If that makes any sense.
 
 rt = 4 # it's interesting that the addition of this assignment makes the rt variable pass into the method regardless of whether or not it is used.
-# just kidding, it's global no matter what. At least for reading. 
+# just kidding, it's global no matter what. At least for reading.
 
 def just_do_it(words, retries=rt, complain='Can I reassign this string at call?'):
     print('rt: ', rt, '\nretries: ', retries)
