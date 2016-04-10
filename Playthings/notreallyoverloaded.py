@@ -2,7 +2,12 @@
 
 # can you assign via input in one line? I'll have to try.
 # I also wonder if you could assign in a function call argument initialization. If that makes any sense.
-def just_do_it(words, retries=4, complain='Can I reassign this string at call?'):
+
+rt = 4 # it's interesting that the addition of this assignment makes the rt variable pass into the method regardless of whether or not it is used.
+# just kidding, it's global no matter what. At least for reading. 
+
+def just_do_it(words, retries=rt, complain='Can I reassign this string at call?'):
+    print('rt: ', rt, '\nretries: ', retries)
     while True:
         decision = input(words) # this just says what words contains and then grabs input ot assign to decision, yes?
         if decision in ('y','ye','yes'): # does this take care of caps? I'm going ot guess no but I could be wrong.
