@@ -9,7 +9,10 @@
 # It's remarkable how complicated people can make things sound when the idea is unremarkable simple.
 
 def overused(n):
-    return lambda: x: x-n
+    return lambda x: x - n
+def lets_print_things(n):
+    print(n)
 
 you_must_go_back = overused(100)
-overused(0)
+lets_print_things(you_must_go_back(0))
+# lets_print_things(overused(0))
