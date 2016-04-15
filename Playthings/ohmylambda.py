@@ -21,3 +21,12 @@ lets_print_things(you_must_go_back(0))
 # lets me define the function of functions, mother of dragons but does not let me call on little drogo.
 # drogo = khaleesi(you_must_go_back(100))
 # drogo(1)
+
+lets_print_things(you_must_go_back(0)) # should be '-100'
+lets_print_things(you_must_go_back(1)) # should be '-101'
+lets_print_things(you_must_go_back(0)) # should be '-101'
+
+# weird shit, got -100, -99, -100. From fn assignment?
+print(you_must_go_back(100)) # got 0.
+# print(overused(10)) # returns error
+# print(overused(1)) # returns error
